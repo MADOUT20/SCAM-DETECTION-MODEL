@@ -40,20 +40,22 @@ ShieldMail allows users to:
 - **Frontend:** HTML, CSS, JavaScript
 - **Visualization:** Google Charts
 - **AI Explanation:** Gemini API (optional)
-- **Deployment:** Vercel
+- **Deployment:** Render
 
 ---
 
-## 🚀 Deployment
-- Flask backend deployed as a serverless function on Vercel
-- Database hosted on Railway
-- Environment variables managed securely via Vercel dashboard
+## 🚀 Live Demo
+
+The application is deployed on **Render** and can be accessed here:
+
+🔗 **https://shieldmail.onrender.com**
 
 ---
 
 ## 👥 Team
 **Team Name:** LazyCoders  
 **Hackathon:** TechRush  
+**Team Members:** Siddharth and Saish
 
 ---
 
