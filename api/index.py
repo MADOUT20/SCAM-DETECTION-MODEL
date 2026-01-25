@@ -11,7 +11,7 @@ from pipeline import clean_text
 from database import get_connection, init_db
 from gemini_helper import rewrite_explanation
 
-init_db()
+#init_db()
 
 app = Flask(__name__)
 
