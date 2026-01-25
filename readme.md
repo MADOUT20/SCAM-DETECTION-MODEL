@@ -39,7 +39,7 @@ ShieldMail allows users to:
 - **Database:** MySQL (Railway)
 - **Frontend:** HTML, CSS, JavaScript
 - **Visualization:** Google Charts
-- **AI Explanation:** Gemini API (optional)
+- **AI Explanation:** Gemini API 
 
 
 ## 🛠 Deployment
