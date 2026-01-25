@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShieldMail Security</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Shield<span>Mail</span></div>
+            <ul class="nav-links">
+                <li onclick="switchView('home-view')">Home</li>
+                <li onclick="switchView('analyze-view')">Analyze</li>
+                <li onclick="switchView('about-view')">About Us</li>
+                <li onclick="switchView('faq-view')">FAQ</li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <section id="home-view" class="window active">
+            <div class="hero centered">
+                <h1>Email Security <span class="highlight">Intelligence</span></h1>
+                <p>Verify suspicious emails and protect your data with enterprise-grade analysis.</p>
+                <div class="btn-container">
+                    <button class="cta-btn" onclick="switchView('analyze-view')">Open Analyzer</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="analyze-view" class="window">
+            <div class="glass-card">
+                <h2 class="section-title">Threat Analyzer</h2>
+                <div class="input-group">
+                    <label>Email Body Content</label>
+                    <textarea id="emailContent" placeholder="Paste full email text here..."></textarea>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Company Domain</label>
+                        <input type="text" id="domain" placeholder="e.g. google.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Suspicious Link</label>
+                        <input type="text" id="link" placeholder="e.g. https://bit.ly/login">
+                    </div>
+                </div>
+                <button class="run-btn spaced-btn" id="analyzeBtn">Analyze Threat</button>
+                <div id="resultBox" class="result hidden"></div>
+                <div id="chartsWrapper">
+                    <div id="risk_pie"></div>
+                    <div id="flags_bar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-view" class="window">
+            <div class="about-container">
+                <div class="team-section">
+                    <h2>Our Team</h2>
+                    <div class="team-grid-two">
+                        <div class="member"><h4>Siddharth</h4><p>Team Lead</p></div>
+                        <div class="member"><h4>Saish</h4><p>UI Lead</p></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="contact-section">
+                    <h2 class="contact-title">Contact Us</h2>
+                    <div class="contact-info-block">
+                        <p><strong>Email:</strong> team@shieldmail.com</p>
+                    </div>
+                    <div class="socials">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq-view" class="window">
+            <div class="faq-container">
+                <h2 class="faq-main-title">Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            How accurate is the analysis? <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="answer-content">
+                                Our heuristic engine uses real-time pattern matching to detect fraud with 99% accuracy by analyzing language intent and link metadata.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            Is my private data stored? <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="answer-content">
+                                No. Privacy is our priority. We process all content in-memory, and data is purged the moment you close the tab.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            Can it detect Zero-Day phishing? <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="answer-content">
+                                Yes. Unlike traditional filters, we analyze the structural behavior of the email rather than just relying on a database of known links.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            Do I need an account to use this? <span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="answer-content">
+                                No account is required for the standard analysis tool. Enterprise users can sign up for API access and advanced reporting.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
