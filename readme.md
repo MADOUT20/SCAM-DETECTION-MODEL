@@ -66,4 +66,9 @@ Render was chosen for its stability with Python-based ML applications and server
 ---
 
 ## ⚠️ Disclaimer
-This project is intended for educational and demonstration purposes only.
+
+ShieldMail is an AI-assisted scam detection tool designed to help users assess the risk of suspicious emails and job or internship offers.  
+The analysis is based on machine learning models and heuristic indicators, which may occasionally produce false positives or false negatives.
+
+ShieldMail should not be considered a substitute for professional verification or legal advice.  
+Users are encouraged to exercise personal judgment and verify critical information through official channels before taking action.
