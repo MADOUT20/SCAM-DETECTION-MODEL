@@ -40,17 +40,23 @@ ShieldMail allows users to:
 - **Frontend:** HTML, CSS, JavaScript
 - **Visualization:** Google Charts
 - **AI Explanation:** Gemini API (optional)
-- **Deployment:** Render
 
+
+## 🛠 Deployment
+
+This project is deployed using **Render**.
+
+- Backend: Flask + Gunicorn
+- Hosting Platform: Render
+- Model: Pre-trained ML model loaded at runtime
+- Database: Optional (disabled for demo reliability)
+
+Render was chosen for its stability with Python-based ML applications and server-side execution.
 ---
 
 ## 🚀 Live Demo
 
-The application is deployed on **Render** and can be accessed here:
-
-🔗 **https://shieldmail.onrender.com**
-
----
+[![Deployed on Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?logo=render&logoColor=white)](https://shieldmail.onrender.com)
 
 ## 👥 Team
 **Team Name:** LazyCoders  
