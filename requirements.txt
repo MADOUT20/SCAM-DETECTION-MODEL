@@ -5,3 +5,4 @@ scikit-learn
 mysql-connector-python
 python-dotenv
 google-generativeai
+gunicorn
