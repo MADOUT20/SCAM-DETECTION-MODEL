@@ -21,8 +21,8 @@ app = Flask(__name__)
 # -----------------------------------
 # Load ML model and vectorizer
 # -----------------------------------
-MODEL_PATH = os.path.join(BASE_DIR, "model", "scam_model.pkl")
-VECTORIZER_PATH = os.path.join(BASE_DIR, "model", "vectorizer.pkl")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "scam_model.pkl")
+VECTORIZER_PATH = os.path.join(os.path.dirname(__file__), "vectorizer.pkl")
 
 with open(MODEL_PATH, "rb") as f:
     model = pickle.load(f)
