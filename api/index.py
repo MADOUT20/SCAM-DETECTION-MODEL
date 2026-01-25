@@ -1,5 +1,8 @@
 print(">>> ACTIVE app.py <<<")
 
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -18,10 +21,13 @@ app = Flask(__name__)
 # -----------------------------------
 # Load ML model and vectorizer
 # -----------------------------------
-with open("model/scam_model.pkl", "rb") as f:
+MODEL_PATH = os.path.join(BASE_DIR, "model", "scam_model.pkl")
+VECTORIZER_PATH = os.path.join(BASE_DIR, "model", "vectorizer.pkl")
+
+with open(MODEL_PATH, "rb") as f:
     model = pickle.load(f)
 
-with open("model/vectorizer.pkl", "rb") as f:
+with open(VECTORIZER_PATH, "rb") as f:
     vectorizer = pickle.load(f)
 
 # -----------------------------------
