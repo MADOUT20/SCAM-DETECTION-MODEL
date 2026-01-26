@@ -41,7 +41,6 @@ ShieldMail allows users to:
 - **Visualization:** Google Charts
 - **AI Explanation:** Gemini API 
 
-
 ## 🛠 Deployment
 
 This project is deployed using **Render**.
