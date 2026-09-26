@@ -58,11 +58,6 @@ Render was chosen for its stability with Python-based ML applications and server
 [![Deployed on Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?logo=render&logoColor=white)](https://shieldmail.onrender.com)
 Note: Render takes some time to load due to free tier limit.
 
-## 👥 Team
-**Team Name:** LazyCoders  
-**Hackathon:** TechRush  
-**Team Members:** Siddharth and Saish
-
 ---
 
 ## ⚠️ Disclaimer
